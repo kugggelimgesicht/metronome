@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: #525252;
+    user-select: none;
+    background-color:#d4f66f
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.metronome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    height: 25vw;
+box-shadow: 5px 10px 10px ;
+    border-radius: 5px; background-color:#bee54a
+  
+}
+
+.bpm-display {
+    width: 100%;
+    text-align: center;
+    color: rgb(119, 43, 190);
+    background-color:#add632;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bpm-display #tempo {
+    font-size: 4em;
+
+}
+
+#tempo-text {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tempo-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+
+}
+
+.tempo-settings .adjust-tempo {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 23px;
+   
+}
+
+.tempo-settings .adjust-tempo:hover {
+    background-color: rgb(119, 43, 190);
+    color: white;
+
+}
+input[type=range]{
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 70%;
+
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(119, 43, 190);
+    cursor: pointer;
+    margin-top:-8px
+
+}
+input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(119, 43, 190);
+    cursor: pointer;
+    border:none;
+
+}
+input[type=range]::-webkit-slider-runnable-track{
+    width:100%;
+    height: 1px;
+    background-color: #490884;
+}
+input[type=range]::-moz-range-track{
+    width:100%;
+    height: 1px;
+    background-color: #490884;
+}
+input[type=range]:focus{
+    outline: none;
+}
+
+#start-stop{
+    border-radius: 50%;
+    background-color: rgb(119, 43, 190);
+    color:white;
+    width: 50px;
+    height: 50px;
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 auto;
+    border:none;
+    cursor: pointer;
+    
+}
+#start-stop:hover{
+    background-color: rgb(72, 15, 126);
+}
+.measures{
+    display: flex;
+    justify-content: center;
+}
+.measures .stepper {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    border:1px solid #ddd;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.measures .stepper:hover{
+    background-color: rgb(119, 43, 190);
+    color: white;
+}
+
+.bp-measure-text{
+    text-align: center;
+}
